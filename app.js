@@ -12,7 +12,7 @@ app.use(cookieParser())
 /**
  * - Routes required
  */
-const authRouter = require("./routes/auth.routes")
+const authRouter = require("./src/routes/auth.routes")
 
 
 /**
