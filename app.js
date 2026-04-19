@@ -13,6 +13,7 @@ app.use(cookieParser())
  * - Routes required
  */
 const authRouter = require("./src/routes/auth.routes")
+const accountRouter = require("./src/routes/account.routes")
 
 
 /**
@@ -24,5 +25,6 @@ app.get("/", (req, res) => {
 })
 
 app.use("/api/auth", authRouter)
+app.use("/api/accounts", accountRouter)
 
 module.exports = app
